@@ -5,7 +5,7 @@ comidas y entrenamientos en lenguaje natural asistido por IA.
 
 > **Estado: prototipo UI-first + backend real.** Las pantallas siguen mostrando
 > datos de ejemplo y aún no hay persistencia local ni `ViewModel`, pero ya existe un
-> backend Laravel 12 (`/home/memoadian/apps/php/iamfit`) que centraliza la IA. La
+> backend Laravel 12 (repo `IAmFit`) que centraliza la IA. La
 > app **ya no lleva la API key de Groq en el APK**: todas las llamadas de IA pasan
 > por el backend (`/foods/search`, `/routines/{id}/advice`). El registro
 > conversacional quedó archivado (decisión de producto B, 2026-10-02).
@@ -143,7 +143,7 @@ backend (`BuildConfig.API_BASE_URL`) y permite hacer un ping a `GET /api/health`
 ## Módulo de IA
 
 La IA ya no se ejecuta en el cliente. La app consume la API del backend
-(`/home/memoadian/apps/php/iamfit`) con `IamFitApi`:
+(repo `IAmFit`) con `IamFitApi`:
 
 | Feature | Endpoint | Dónde corre la IA |
 | --- | --- | --- |
@@ -253,5 +253,5 @@ JAVA_HOME=/ruta/a/android-studio/jbr ./gradlew assembleDebug
 ## Notas de origen
 
 El contrato `ChatProvider` nació como adaptación del patrón usado en otro proyecto
-(`inmuebles`). Tras la decisión B, la ejecución de IA se movió al backend Laravel 12
+de un proyecto hermano. Tras la decisión B, la ejecución de IA se movió al backend Laravel 12
 y el cliente solo consume su API.

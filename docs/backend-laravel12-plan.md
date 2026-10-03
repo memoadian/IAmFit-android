@@ -8,8 +8,8 @@
 
 | Campo | Valor |
 | --- | --- |
-| Implementación real | `/home/memoadian/apps/php/iamfit` (Laravel 12) |
-| App Android | `/home/memoadian/AndroidStudioProjects/IAmFit` |
+| Implementación real | repo del backend (Laravel 12) |
+| App Android | repo `IAmFit-android` |
 | Fecha de análisis | 2026-10-02 |
 | Método | Revisión de código, rutas, migraciones, config, seeders y tests |
 
@@ -218,7 +218,7 @@ medianoche puede caer en el día equivocado según la zona del usuario. Ver P1.
 - **No hay** tests con `Http::fake()` para la IA, ni de `/log`, `daily-summary` o
   `streak`.
 - Seeders: `MuscleSeeder`, `ExerciseSeeder`, `FoodSeeder`; en entorno local crea el
-  usuario `Memo` (`memoadian@gmail.com`). No hay meta diaria ni datos demo de comidas.
+  usuario `Demo` (`demo@iamfit.local`) con perfil, pesos, rutina y diario de ejemplo.
 - Pint está como dev-dependency; no hay CI ni configuración de PHPStan.
 
 ### 3.9 Deuda menor observada

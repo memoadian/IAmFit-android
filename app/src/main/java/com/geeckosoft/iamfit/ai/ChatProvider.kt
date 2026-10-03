@@ -6,7 +6,7 @@ package com.geeckosoft.iamfit.ai
  * contrato, no de la implementación concreta. Cambiar de proveedor = una nueva
  * clase que implemente esto, sin tocar nada más.
  *
- * Réplica del `App\Contracts\AiChatProvider` de inmuebles.
+ * Espejo del contrato `AiChatProvider` del backend.
  */
 interface ChatProvider {
 
