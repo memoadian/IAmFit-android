@@ -252,6 +252,12 @@ JAVA_HOME=/ruta/a/android-studio/jbr ./gradlew assembleDebug
 
 ## Notas de origen
 
-El contrato `ChatProvider` nació como adaptación del patrón usado en otro proyecto
-de un proyecto hermano. Tras la decisión B, la ejecución de IA se movió al backend Laravel 12
-y el cliente solo consume su API.
+El contrato `ChatProvider` nació como adaptación del patrón usado en un proyecto
+hermano. Tras la decisión B, la ejecución de IA se movió al backend Laravel 12 y el
+cliente solo consume su API.
+
+---
+
+## Licencia
+
+MIT. Ver [LICENSE](LICENSE).
